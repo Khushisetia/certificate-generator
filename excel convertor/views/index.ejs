@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+         <title>Certificate</title> 
+         <style> 
+         body { font-family: Arial, sans-serif; }
+        .certificate {
+            border: 2px solid #000;
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    
+        .certificate h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .certificate-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+    
+        .certificate-info p {
+            margin: 0;
+        }
+    
+        .certificate-info span {
+            font-weight: bold;
+        }
+    
+        .certificate-tree {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .certificate-tree img {
+            width: 100px;
+            height: 100px;
+        }
+    
+        .certificate-footer {
+            text-align: center;
+        }
+    </style>
+    </head> <body> <div class="certificate"> <h2>Certificate of Donation</h2>
+        <div class="certificate-info">
+            <p><span>Name:</span><%=name %></p>
+            <p><span>Phone:</span><%=mobile_number %></p>
+            <p><span>Email:</span> <%=email%></p>
+        </div>
+    
+        <div class="certificate-tree">
+            <p><span>Amount Donated:</span>&#8377;<%=amount%></p>
+            <p><span>Number of Trees:</span><%=number_of_trees%></p>
+            <img src="https://art.pixilart.com/f45cad30e5fbff2.png" alt="Tree">
+        </div>
+    
+        <div class="certificate-footer">
+            <p>This is to certify that <%=name %> has successfully donated &#8377;<%=amount%> and planted <%=number_of_trees%> trees on behalf of this organization.</p>
+            <p>Thank You for your contribution❤️</p>
+        </div>
+    </div>
+    </body> </html>
